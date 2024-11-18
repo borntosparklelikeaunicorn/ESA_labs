@@ -83,3 +83,7 @@ CREATE TABLE DanceClass (
 
 #### Задание 6
 
+Welcome-page
+![image](https://github.com/user-attachments/assets/ea5af4a6-1b90-49fe-947f-f3b1b75f87b9)
+
+
