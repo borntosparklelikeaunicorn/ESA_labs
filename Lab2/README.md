@@ -53,7 +53,16 @@ Web-слой был реализован с использованием Spring 
 ![image](https://github.com/user-attachments/assets/8170667b-23e1-41e7-a12c-c9a4ba8bd9f4)
 ![image](https://github.com/user-attachments/assets/7107326f-0df9-4129-a78d-9fe76a50bd99)
 
+Также можно опробовать функционал с добавлением новых записей в таблицы:
+![image](https://github.com/user-attachments/assets/0c3f371b-5798-42f1-b6df-2628b0e3fd12)
+![image](https://github.com/user-attachments/assets/fc36eb06-46cf-4966-ac26-a0560e0cf2c1)
+В PostgreSQL всё появилось
+![image](https://github.com/user-attachments/assets/5efdca61-7604-48ac-adbc-cb140c906806)
 
+Функционал добавления новых студий:
+![image](https://github.com/user-attachments/assets/86d83e32-3ecc-4fa0-9a1c-4cd34f0ad9ec)
+![image](https://github.com/user-attachments/assets/9565dc49-c07a-4575-8861-4e818730f3db)
+![image](https://github.com/user-attachments/assets/61276731-cc6a-4b82-81c5-63d1fd9dd86c)
 
 
 
