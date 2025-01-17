@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: test
+  jackson:
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/DanceStudioDB
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 1
+      auto-commit: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.default_schema: public
+  artemis:
+    user:  artemis
+    password:  artemis
+  mail:
+    host: ${SMTP_HOST:smtp.gmail.com}
+    port: ${SMTP_PORT:587}
+    username: maria.makaaarova@gmail.com
+    password: incr vrkf duvb mhye
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            required: true
+  jms:
+    pub-sub-domain: true
+server:
+  port: 8081
+application:
+  topic:
+    audit: audit_queue
