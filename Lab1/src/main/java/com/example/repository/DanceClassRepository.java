@@ -16,7 +16,7 @@ public class DanceClassRepository {
 
     public List<DanceClass> getAll() {
         return em.createQuery(
-                        "SELECT * FROM danceclass",
+                        "SELECT p FROM danceclass p",
                         DanceClass.class)
                 .getResultList();
     }
