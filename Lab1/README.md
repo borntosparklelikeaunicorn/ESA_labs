@@ -94,7 +94,7 @@ CREATE TABLE DanceClass (
 ![image](https://github.com/user-attachments/assets/48634c7e-1fbe-4bcf-91b9-09b2cc80d015)
 
 Далее с помощью `http://localhost:8080/` можно увидеть в действии данное приложение.
-![image](https://github.com/user-attachments/assets/adae5130-c5e5-45c6-b39b-f9a7a3e1b6a3)
+![image](https://github.com/user-attachments/assets/e70d3a59-2dd4-4ea2-9435-04db19c9aa9a)
 ![image](https://github.com/user-attachments/assets/1595b2c8-ed0c-45e3-9b91-79f6b147fb9f)
 ![image](https://github.com/user-attachments/assets/9463ed0d-8848-4991-a1d4-aab405bcc0ae)
 
