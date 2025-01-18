@@ -8,12 +8,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectResources">
-    <resource url="C:\Users\Мария\IdeaProjects\Lab1\beans_4_0.xsd" location="$PROJECT_DIR$" />
-    <resource url="http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd " location="$PROJECT_DIR$" />
-    <resource url="https://jakarta.ee/xml/ns/jakartaee/beans_4_0.xsd" location="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

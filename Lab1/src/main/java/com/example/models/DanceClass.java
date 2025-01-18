@@ -1,13 +1,15 @@
 package com.example.models;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "danceclass")
 public class DanceClass {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @Column(name = "style")
@@ -21,55 +23,4 @@ public class DanceClass {
 
     @Column(name = "studio_id")
     private int studioId;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getLevel() {
-        return level;
-    }
-
-    public void setLevel(String level) {
-        this.level = level;
-    }
-
-    public String getSchedule() {
-        return schedule;
-    }
-
-    public void setSchedule(String schedule) {
-        this.schedule = schedule;
-    }
-
-    public int getStudioId() {
-        return studioId;
-    }
-
-    public void setStudioId(int studioId) {
-        this.studioId = studioId;
-    }
-
-    @Override
-    public String toString() {
-        return "DanceClass{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", level='" + level + '\'' +
-                ", schedule='" + schedule + '\'' +
-                ", studioId=" + studioId +
-                '}';
-    }
 }

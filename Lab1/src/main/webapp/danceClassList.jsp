@@ -1,42 +1,42 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.example.models.DanceClass" %>
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Dance Classes</title>
+    <title>All Dance Classes</title>
 </head>
 <body>
-<h1>Dance Classes</h1>
-
-<!-- Добавим таблицу для отображения данных -->
-<table border="1">
+<h1><%= "The Dance Classes page:" %></h1>
+<table>
     <thead>
         <tr>
-            <th>ID</th>
-            <th>Style</th>
-            <th>Level</th>
-            <th>Schedule</th>
-            <th>Studio ID</th>
+           <th>ID</th>
+           <th>Style</th>
+           <th>Level</th>
+           <th>Schedule</th>
+           <th>Studio ID</th>
         </tr>
     </thead>
     <tbody>
-        <%
-            List<com.example.models.DanceClass> danceClasses = (List<com.example.models.DanceClass>) request.getAttribute("danceClasses");
-            for (com.example.models.DanceClass danceClass : danceClasses) {
-        %>
-            <tr>
-                <td><%= danceClass.getId() %></td>
-                <td><%= danceClass.getName() %></td>
-                <td><%= danceClass.getLevel() %></td>
-                <td><%= danceClass.getSchedule() %></td>
-                <td><%= danceClass.getStudioId() %></td>
-            </tr>
-        <% } %>
+    <%
+        List<DanceClass> classesList = (List<DanceClass>)request.getAttribute("danceClassList");
+        for (DanceClass danceClass : classesList) {
+    %>
+    <tr>
+        <td><%= danceClass.getId() %></td>
+        <td><%= danceClass.getName() %></td>
+        <td><%= danceClass.getLevel() %></td>
+        <td><%= danceClass.getSchedule() %></td>
+        <td><%= danceClass.getStudioId() %></td>
+    </tr>
+    <%
+        }
+    %>
     </tbody>
 </table>
 
-<!-- Форма для добавления нового занятия -->
-<h2>Add a New Dance Class</h2>
-<form action="add-dance-class" method="post">
+<form action="classes" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required><br><br>
 
@@ -53,3 +53,4 @@
 </form>
 </body>
 </html>
+
