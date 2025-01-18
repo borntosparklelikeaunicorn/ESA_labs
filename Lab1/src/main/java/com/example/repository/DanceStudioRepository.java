@@ -16,7 +16,7 @@ public class DanceStudioRepository {
     private EntityManager em;
     public List<DanceStudio> getAll() {
         return em.createQuery(
-                        "SELECT * FROM dancestudio",
+                        "SELECT p FROM dancestudio p",
                         DanceStudio.class)
                 .getResultList();
     }
